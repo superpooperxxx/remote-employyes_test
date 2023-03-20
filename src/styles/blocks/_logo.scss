@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+
+  font-size: 25px;
+
+  @include onDesktop {
+    font-size: 30px;
+  }
+
+  font-weight: 800;
+
+  color: $color__background;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: -7px;
+
+    width: 20px;
+    height: 2px;
+
+    transform: translateX(100%);
+
+    background: $color__background;
+  }
+}

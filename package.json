@@ -1,7 +1,7 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "remote-employees",
   "version": "1.0.0",
-  "description": "Frontend boilerplate based on gulp",
+  "description": "test task for remoteemployees",
   "main": "index.js",
   "scripts": {
     "init": "mate-scripts init",

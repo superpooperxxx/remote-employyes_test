@@ -1,7 +1,16 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+// @import "fonts";
+
+// Blocks
+@import "./blocks/container";
+@import "./blocks/logo";
+@import "./blocks/footer";
+
+:root {
+  font-family: "Libre Franklin", sans-serif;
+}
 
 body {
-  background: $c-gray;
+  height: 100vh;
+  padding-top: calc(100vh - 125px);
 }
