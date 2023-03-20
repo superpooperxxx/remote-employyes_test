@@ -1,0 +1,78 @@
+.footer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  height: 150px;
+
+  background-color: $color__accent;
+
+  @include onTablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 125px;
+
+    padding: 0 50px;
+  }
+
+  @include onDesktop {
+    padding-left: 75px;
+    padding-right: 175px;
+  }
+
+  &__copyright {
+    color: $color__background;
+
+    @include onTablet {
+      position: absolute;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &__years {
+    font-size: 13px;
+    font-weight: 800;
+
+    @include onTablet {
+      font-size: 15px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include onTablet {
+      gap: 20px;
+    }
+  }
+
+  &__link-item {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__link-img {
+    width: 25px;
+
+    &--twitter {
+      width: 20px;
+
+      @include onTablet {
+        width: 18px;
+      }
+    }
+  }
+}
